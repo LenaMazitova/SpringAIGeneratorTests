@@ -1,0 +1,27 @@
+HELP.md
+target/
+.mvn/
+mvnw
+mvnw.cmd
+.gitattributes
+src/test/java/com/example/ai_test_generator/*
+!src/test/java/com/example/ai_test_generator/BaseApiTest.java
+api.json
+README_rus.md
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Compiled files
+*.class
+*.log
