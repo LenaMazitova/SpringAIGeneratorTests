@@ -41,4 +41,18 @@ The class will appear at: src/test/java/com/example/ai_test_generator
 
 After checking and fixing the generated test class, run the tests as usual,  
 passing your base server path for making requests to it in the application.properties file:  
-api.base.url=
+api.base.url=  
+
+## If we want to see metrics on the Grafana dashboard
+Before starting Colima, I recommend checking free memory:  
+top -l 1 | grep "PhysMem"  
+and if it's less than 1 GB, clear the caches:  
+sudo purge  
+
+This command starts Colima with resource limits (optional) and with hostname (important):  
+colima start --memory 1 --cpu 1 --network-address --hostname colima  
+
+========== Links for viewing ==========  
+Grafana: http://localhost:3000/dashboards (login: admin, password: admin)  
+Prometheus: http://localhost:9090/query
+==========================================  

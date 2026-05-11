@@ -4,6 +4,8 @@ target/
 mvnw
 mvnw.cmd
 .gitattributes
+src/main/java/com/example/ai_test_generator/service/SampleService.java
+src/main/java/com/example/ai_test_generator/controller/SampleController.java
 src/test/java/com/example/ai_test_generator/*
 !src/test/java/com/example/ai_test_generator/BaseApiTest.java
 api.json
